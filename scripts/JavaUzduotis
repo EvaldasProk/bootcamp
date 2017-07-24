@@ -1,0 +1,18 @@
+var pcs = [
+	{ "modelis":"lenovo ideja", "kaina":1234, "spalva":{"raudona":1,"zalia":2} },
+	{ "modelis":"hp monstras", "kaina":800, "spalva":{"juoda":2,"geltona":0} },
+	{ "modelis":"toshiba sriuba", "kaina":256, "spalva":{"melyna":3,"zalia":1} },
+	{ "modelis":"dell apskritimas", "kaina":697, "spalva":{"juoda":1,"balta":2} },
+	{ "modelis":"acer peizazas", "kaina":620, "spalva":{"juoda":4,"balta":2} },
+	{ "modelis":"apple 256", "kaina":2560, "spalva":{"balta":3,"juoda":1} },
+	{ "modelis":"asus pokst", "kaina":1001, "spalva":{"juoda":2,"geltona":3} }
+];
+
+
+
+for ( PC in pcs ){                        
+           if (pcs[PC].kaina <= 800 && ( pcs[PC].spalva.juoda >= 2 || pcs[PC].spalva.balta >= 2 )){
+               console.log("Galimi variantai: " + "\n" + "\n" + "Modelis: " + pcs[PC].modelis + "\n" + "Kaina: " +
+                          pcs[PC].kaina*2 + "\n" + "Spalvos: " + Object.keys(pcs[PC].spalva));
+                }
+           }
