@@ -1,4 +1,1 @@
-Rytoj pas jus ateisiu ! Laukit ! 
-
-Made by Jevgenijus :)
-Number two  
+Evaldo bootcamp projektas
