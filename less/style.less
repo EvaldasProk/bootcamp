@@ -50,27 +50,27 @@ table {
 /* Variables */
 
 @container-width : 1200px;
-@container-gap : 15px
+@container-gap : 15px;
 
 
 
 /* Font */ 
 
-@font-face {
-	font-family: "MyriadPro" ;
-	src : url(..//fonts/MyriadPro-Regular.otf);
-	font-family: "Exo";
-	src: url(..//fonts//Exo);
-	font-family: 'Open Sans Condensed';
-	src: url('..//fonts/OpenSansCondensed-Light.eot');
-	src: url('..//fonts/OpenSansCondensed-Light.eot?#iefix') format('embedded-opentype'),
-		url('..//fonts/OpenSansCondensed-Light.woff2') format('woff2'),
-		url('..//fonts/OpenSansCondensed-Light.woff') format('woff'),
-		url('..//fonts/OpenSansCondensed-Light.ttf') format('truetype'),
-		url('..//fonts/OpenSansCondensed-Light.svg#OpenSansCondensed-Light') format('svg');
-	font-weight: 300;
-	font-style: normal;
-}
+//@font-face {
+//	font-family: "MyriadPro" ;
+//	src : url(../fonts/MyriadPro-Regular.otf);
+//	font-family: "Exo";
+//	src: url(../fonts/Exo);
+//	font-family: 'Open Sans Condensed';
+//	src: url('../fonts/OpenSansCondensed-Light.eot');
+//	src: url('../fonts/OpenSansCondensed-Light.eot?#iefix') format('embedded-opentype'),
+//		url('../fonts/OpenSansCondensed-Light.woff2') format('woff2'),
+//		url('../fonts/OpenSansCondensed-Light.woff') format('woff'),
+//		url('../fonts/OpenSansCondensed-Light.ttf') format('truetype'),
+//		url('../fonts/OpenSansCondensed-Light.svg#OpenSansCondensed-Light') format('svg');
+//	font-weight: 300;
+//	font-style: normal;
+//}
 
 
 
@@ -83,7 +83,7 @@ table {
 }
 
 .section1 {
-	display: flex ;
+	display: flex;
 	flex-direction: column ;
 	align-items: center;
 	justify-content: space-between 300px;
@@ -343,9 +343,10 @@ h2 {
 }
 
 .threesectiontext {
-	display: flex;
-    justify-content: flex-end;
-    flex-direction: column;
+	max-width: 300px;
+    width: 100%;
+    text-align: right;
+    margin: 0 0 0 auto;
 }
 	
 
@@ -448,8 +449,9 @@ h2 {
 	}
 
 .fiveHP {
-	margin-left: 270px ;
-	margin-right: 250px;
+	max-width: 650px;
+  width: 100%;
+  margin: 0 auto;
 	}
 
 .fiveH1 {
@@ -480,9 +482,14 @@ h2 {
 	color: gray ;
 	}
 
-#pcphoto {
-	margin-left: 280px;
+.picture {
+	text-align: center;
 	padding-top: 112px;
+  
+  .pcphoto {
+    max-width: 766px;
+    width: 100%;
+  }
 }
 
 .sixsection {
@@ -524,10 +531,10 @@ h2 {
 
 
 .supportpar {
-	font-family: "Exo" ;
-	font-style : Regular;
-	font-size: 12px ;
-	color: gray ;
+	font-family: "Exo";
+	font-style: Regular;
+	font-size: 12px;
+	color: gray;
 }
 
 
@@ -540,11 +547,21 @@ h2 {
 .fourimage {
 	padding-top: 14px;
 	display: flex;
-	flex-direction: row ;
+	flex-direction: row;
 	justify-content: space-around;
 	max-width: 210px;	
 	}
 
-.back {
-
-}
+/* Update */
+  
+  .call-to-action {
+    font-family: 'Exo';
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #ff6d6d;
+    text-decoration: none;
+    padding: 15px 60px;
+    border-radius: 3px;
+  }
+  
+  
